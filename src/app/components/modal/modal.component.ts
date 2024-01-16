@@ -12,8 +12,10 @@ import {NgbModal, NgbDatepickerModule, ModalDismissReasons} from "@ng-bootstrap/
 })
 export class ModalComponent {
 
-  @Input() name: string = '';
 
+  // prop ca
+  @Input() message: string = '';
+// se precisar emitr evento para o pai
   @Output() detailsRedirect: EventEmitter<string> = new EventEmitter<string>();
 
   private modalService = inject(NgbModal);
